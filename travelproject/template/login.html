@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <title>Login Page</title>
+</head>
+<body style=" background-color: #567d96">
+<div style="position:relative; left:80px; top:20px;">
+<h2><strong>Login</strong></h2>
+<form action="login" method="post">
+  {% csrf_token %}
+  <input type="text" name="username" placeholder="Enter your username"><br>
+  <input type="password" name="password" placeholder="Enter your password"><br>
+  <input type="submit">
+</form>
+</div>
+</body>
+</html>
